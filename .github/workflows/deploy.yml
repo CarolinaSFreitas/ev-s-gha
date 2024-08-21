@@ -9,6 +9,7 @@ env:
 
 jobs:
   test:
+    # enviroment: testing   essa linha puxa as variáveis de ambiente do ambiente de teste criado no github
     env: 
       MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS }}
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
